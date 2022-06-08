@@ -23,7 +23,7 @@ I installed apache using sudo apt installed
 
 checked satus using sudo systemctl status apache2 which shows green dot to confirm the ststus active.
 
-![Apache status](image/status of apache.png)
+![Apache status](Images/Status_of_Apache.png)
 
 **INSTALLING THE COMPONENT OF LAMP  Mysql**
 
