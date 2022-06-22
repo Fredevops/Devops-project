@@ -23,7 +23,7 @@ Node.js software from Ubuntu repositories with the codes `curl -fsSL https://deb
 I created a Todo directory I initialize To-do project, with a new file named `package.json` with the command 
 `npm init` This file will contain information about my application and the dependencies to run. I followed the instruction and came out with the picture below.
 
-![Content of package.json](./Images/Screenshot _package_json.png)
+![Content of package.json](/images/Screenshot _package_json.png)
 
 *INSTALL EXPRESSJS*
 
@@ -37,12 +37,12 @@ see
 
 On the code inputted you will notice that we specified to use port 5000.'so I allocated port 5000 to the inbound rule for TCP port in EC2 Security Groups.
 
-![View of security group inbound rules](./Images/security_group_inbound _rule.png)
+![View of security group inbound rules](/images/security_group_inbound _rule.png)
 
 I used the command `node index.js` and I got the message Server running on port 5000 in my terminal.
 I also inserted my server’s Public IP :5000 in my browser see the outcome below
 
-![weblink with port 5000](./Images/weblink_with_port_5000.png)
+![weblink with port 5000](/images/weblink_with_port_5000.png)
 
 To input codes in api.js file, I created a routes directory to define various endpoints for To-do app for each task.
 I open the file with the vim command `vim api.js` to copy the codes into the vim environment
@@ -63,7 +63,7 @@ I update my routes from the file api.js in ‘routes’ directory to make use of
 
  `DB = 'mongodb+srv://fred-devops:Syno=Logy@<network-address>/myfirstconnection?retryWrites=true&w=majority'`
 
-  ![DB_1_Screenshot](./Images/DB_1_Screenshot.png)
+  ![DB_1_Screenshot](/images/DB_1_Screenshot.png)
 
   I updated the index.js to reflect the use of .env for Node.js to connect to the database.
   `vim index.js` I deleted the code in the vim and replaced it by pasting the entire code
@@ -74,7 +74,7 @@ I used `node index.js` to Start my server hoping to get the below message
 
 But i got the the error messagem below. see picture.
 
-![Screenshot_node_index_js_syntacx_error](./Images/Screenshot_node_index_js_syntacx_error.png)
+![Screenshot_node_index_js_syntacx_error](/images/Screenshot_node_index_js_syntacx_error.png)
 
 *I troubleshoot and found out the following errors* 
 1. I used a special character for the password when i signed up for mongodb
@@ -85,7 +85,7 @@ But i got the the error messagem below. see picture.
 2. I closed up the dspaces between Db,= and 'mongobd
 
 see outcome below
-![Database_connected_successfully](./Images/Database_connected_successfully.png)
+![Database_connected_successfully](/images/Database_connected_successfully.png)
 
 
 *Testing Backend Code without Frontend using RESTful API*
@@ -95,11 +95,11 @@ To test if the backend is working, I installed Postman as a RESTfulL  API develo
 
 POST request to the API http://<PublicIP>:5000/api/todos. This request sends a new task to our To-Do list so the application could store it in the database.
 
-![Post_postman](./Images/Post_Postman.png)
+![Post_postman](/images/Post_Postman.png)
 
 GET request to the API http://<PublicIP>:5000/api/todos. This request sends a new task to our To-Do list so the application could store it in the database.
 
-![Get postman](./Images/Get_Postman.png)
+![Get postman](/images/Get_Postman.png)
 
 with the above outcome i have successfully created Backend
 
@@ -123,11 +123,11 @@ I opened the package.json file from the Todo folder, I replaced the below code i
 
 
 
-![App running on port 3000](./Images/Screenshot _of _App_running _on _port_3000.png)
+![App running on port 3000](/images/Screenshot _of _App_running _on _port_3000.png)
 
-![npm run dev](./Images/npm_run_dev.png)
+![npm run dev](/images/npm_run_dev.png)
 
-![My To-do](./Images/Screenshot_of_My_Todo.png)
+![My To-do](/images/Screenshot_of_My_Todo.png)
 
 *CONCLUSION*
 I have been able to create a simple To-Do and deployed it to the MERN stack. I wrote a frontend application using React.js that communicates with a backend application written using Expressjs. I also created a MongoDB backend for storing tasks in a database.
