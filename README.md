@@ -16,7 +16,7 @@ I signed up and created a new Ubuntu Instance for my Project 1 LAMP stack which 
 I updated  and upgraded the server using `sudo apt update and apt upgrade`
 Note! When i finished the updategit and upgrade, it prompted me to restart ubuntu, see pix.
 
-![Kernel upgrade prompt](./images/Kernel_upgrade_prompt.png)
+![Kernel upgrade prompt](/images/Kernel_upgrade%20_prompt.png)
 
 Node.js software from Ubuntu repositories with the codes `curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -` and `sudo apt-get install -y nodejs`
 
